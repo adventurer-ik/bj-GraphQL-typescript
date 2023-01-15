@@ -1,0 +1,9 @@
+{
+  "name": "graphql-book-fullstack-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:adventurer-ik/bj-GraphQL-typescript.git",
+  "author": "IK <adventurer-ik@daum.net>",
+  "license": "MIT",
+  "private": true
+}
