@@ -14,3 +14,6 @@ https://eslint.org/docs/latest/use/configure/
 
 #eslint 설정간 에러
 https://noogoonaa.tistory.com/62 보고 처리
+
+#TypeGraphQL - @Field에 대한 설명
+https://typegraphql.com/docs/types-and-fields.html
