@@ -8,7 +8,7 @@ export class Film {
   @Field({ description: '영화 제목' })
   title: string;
 
-  @Field({ description: '영화 부제목' })
+  @Field({ nullable: true, description: '영화 부제목' })
   subtitle?: string;
 
   @Field({ description: '영화 장르' })

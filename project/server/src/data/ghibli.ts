@@ -1,4 +1,4 @@
-import { Cut } from '../etnities/Cut';
+// import { Cut } from '../etnities/Cut';
 import { Film } from '../entities/Film';
 
 interface Cut {
