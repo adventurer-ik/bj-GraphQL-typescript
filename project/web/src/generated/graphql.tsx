@@ -16,10 +16,17 @@ export type Scalars = {
   Float: number;
 };
 
+export type Director = {
+  __typename?: 'Director';
+  id: Scalars['Int'];
+  name: Scalars['String'];
+};
+
 export type Film = {
   __typename?: 'Film';
   /** 영화 줄거리 및 설명 */
   description: Scalars['String'];
+  director: Director;
   /** 제작자 고유 아이디 */
   director_id: Scalars['Int'];
   /** 영화 장르 */
@@ -46,7 +53,7 @@ export type Query = {
 export type FilmsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type FilmsQuery = { __typename?: 'Query', films: Array<{ __typename?: 'Film', id: number, title: string, subtitle?: string | null, runningTime: number, director_id: number, release: string, posterImg: string }> };
+export type FilmsQuery = { __typename?: 'Query', films: Array<{ __typename?: 'Film', id: number, title: string, subtitle?: string | null, runningTime: number, release: string, posterImg: string, director: { __typename?: 'Director', name: string } }> };
 
 
 export const FilmsDocument = gql`
@@ -56,7 +63,9 @@ export const FilmsDocument = gql`
     title
     subtitle
     runningTime
-    director_id
+    director {
+      name
+    }
     release
     posterImg
   }
