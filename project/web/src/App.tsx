@@ -18,7 +18,7 @@ export const App: React.FC = () => (
   <ApolloProvider client={apolloClient}>
     <ChakraProvider theme={theme}>
       <Box>
-        <Text>Ghibli GraphQL</Text>
+        <Text><b>Ghibli GraphQL</b></Text>
         <FilmList></FilmList>
       </Box>
     </ChakraProvider>
