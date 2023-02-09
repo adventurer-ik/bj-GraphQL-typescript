@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Main from './pages/Main';
 import Film from './pages/Film';
 import SignUp from './pages/SignUp';
+import Login from './pages/Login';
 
 const apolloClient = createApolloClient();
 
@@ -17,6 +18,7 @@ export const App: React.FC = () => {
           <Route exact path="/" component={Main} />
           <Route exact path="/film/:filmId" component={Film}></Route>
           <Route exact path={"/signup"} component={SignUp}></Route>
+          <Route exact path={"/login"} component={Login}></Route>
         </BrowserRouter>
       </ChakraProvider>
     </ApolloProvider>
